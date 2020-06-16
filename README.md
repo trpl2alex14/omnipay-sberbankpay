@@ -8,7 +8,7 @@ It is an extension of the original package [omnipay-sberbank](https://github.com
 
 1. Add orderBundle 
 
-```
+```php
 use RFAct54\Factory as FactoryOrderBundle;
 use Omnipay\Omnipay;
 
@@ -35,7 +35,7 @@ $gateway->setUserName('merchant_login')
 
 2. Get Receipts
 
-```
+```php
 $request = $this->gateway->receiptStatus(
 [
     'orderId' => $orderId,
@@ -52,7 +52,7 @@ if ($response->isSuccessful()) {
 
 3. Close Receipts
 
-```
+```php
 $request = $this->gateway->closeReceipt(
 [
     'mdOrder' => $orderId,
