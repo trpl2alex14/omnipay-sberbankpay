@@ -1,0 +1,51 @@
+{
+    "name": "trpl2alex14/omnipay-sberbankpay",
+    "description": "Omnipay driver for Sberbank with Receipt FL-54",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "trpl2alex14",
+            "email": "trpl2alex14@bk.ru"
+        }
+    ],
+    "keywords": [
+        "sberbank",
+        "acquiring",
+        "rest",
+        "api",
+        "payment",
+        "receipt",
+        "fl54"
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "trpl2alex14/rfact54",
+                "version": "1.0.0",
+                "source": {
+                    "type" : "git",
+                    "url" : "https://github.com/trpl2alex14/rfact54.git",
+                    "reference" : "master"
+                },
+                "dist": {
+                    "url": "https://github.com/trpl2alex14/rfact54/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "omnipay/common": "v3.0.3",
+        "andrewnovikof/omnipay-sberbank": "^3.2.1",
+        "trpl2alex14/rfact54": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\SberbankPay\\": "src/"
+        }
+    }
+}
