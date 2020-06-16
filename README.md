@@ -50,7 +50,7 @@ if ($response->isSuccessful()) {
 }
 ``` 
 
-3. Close Receipts
+3. Close Receipt
 
 ```php
 $request = $this->gateway->closeReceipt(
